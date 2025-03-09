@@ -1,4 +1,3 @@
-// CarService.java (сервис)
 package web.service;
 
 import web.model.Car;
@@ -8,11 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class CarService {
+public class CarServiceImpl implements CarService {
 
     private final List<Car> cars;
 
-    public CarService() {
+    public CarServiceImpl() {
         cars = new ArrayList<>();
         cars.add(new Car("BMW", "Black", 2020));
         cars.add(new Car("Mercedes", "Silver", 2021));
@@ -20,7 +19,7 @@ public class CarService {
         cars.add(new Car("Toyota", "White", 2023));
         cars.add(new Car("Honda", "Blue", 2019));
     }
-
+    @Override
     public List<Car> getCars(int count) {
         if (count >= 5) {
             return cars;

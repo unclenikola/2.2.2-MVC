@@ -1,8 +1,8 @@
-// CarController.java (контроллер)
 package web.controller;
 
 import web.model.Car;
 import web.service.CarService;
+import web.service.CarServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

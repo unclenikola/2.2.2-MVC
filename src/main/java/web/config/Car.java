@@ -1,4 +1,3 @@
-// Car.java (модель)
 package web.model;
 
 public class Car {
