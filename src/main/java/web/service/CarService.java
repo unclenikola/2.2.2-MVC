@@ -1,8 +1,10 @@
 package web.service;
 
+import web.config.Car;
+
 import java.util.List;
 
 public interface CarService {
 
-    List<web.model.Car> getCars(int count);
+    List<Car> getCars(int count);
 }

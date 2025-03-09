@@ -1,6 +1,7 @@
 package web.controller;
 
-import web.model.Car;
+//import web.model.Car;
+import web.config.Car;
 import web.service.CarService;
 import web.service.CarServiceImpl;
 import org.springframework.stereotype.Controller;
@@ -21,7 +22,7 @@ public class CarController {
 
 	@GetMapping(value = "/cars")
 	public String printCars(@RequestParam(value = "count", defaultValue = "5") int count, Model model) {
-		List<Car> cars = carService.getCars(count);
+		List<web.config.Car> cars = carService.getCars(count);
 		model.addAttribute("cars", cars);
 		return "cars";
 	}

@@ -1,6 +1,6 @@
 package web.service;
 
-import web.model.Car;
+import web.config.Car;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
